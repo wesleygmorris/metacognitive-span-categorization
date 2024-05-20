@@ -18,8 +18,11 @@ We finetuned a multilabel classification tool from DeBERTa-v3-large using Huggin
 
 ### Hyperparameter tuning
 We used Weights and Biases to tune hyperparameters before training, using the recommended hyperparameters from [the paper released by the DeBERTa-v3 team](https://arxiv.org/pdf/2111.09543).
+
 The results of the hyperparemeter tuning are in the figure below:
+
 ![hptuning results](/assets/hptuning.JPG)
+
 The best model used the following hyperparameters:
 - epochs: 10
 - learning_rate: 9.946303722432942e-06
@@ -27,4 +30,5 @@ The best model used the following hyperparameters:
 - weight_decay: 0.01
 
 The zero-information baseline accuracy (accuracy if we always predict no for every category) is 0.843. Results from the best performing model on the training data are in the figure below:
+
 ![hp results](/assets/hptuning-best_res.JPG)
